@@ -1,0 +1,36 @@
+<div class="login-container">
+    <img class="film" src="assets/images/film.jpg" alt="ddlj">
+    <div class="logo">
+        Rotten Potatoes
+    </div>
+    <div class="desc">
+        Dilwale Dulhania Le Jayenge (transl. "The Big-Hearted Will Take the Bride"), 
+        also known by the initialism DDLJ, is a 1995 Indian Hindi-language musical romance 
+        film written and directed by Aditya Chopra in his directorial debut and produced by his 
+        father Yash Chopra. Released on 20 October 1995, the film stars Shah Rukh Khan and Kajol. 
+        The plot revolves around Raj and Simran, two young non-resident Indians, who fall in love 
+        during a vacation through Europe with their friends. Raj tries to win over Simran's family 
+        so the couple can marry, but Simran's father has long since promised her hand to his friend's 
+        son. The film was shot in India, London, and Switzerland, from September 1994 to August 1995.
+        With an estimated total gross of ₹2 billion[3][4] ($60 million) worldwide,[5] Dilwale 
+        Dulhania Le Jayenge was the highest-grossing Indian film of 1995 and one of the most successful
+         Indian films in history. It won 10 Filmfare Awards—the most for a single film. Its soundtrack album became one of the most popular of the 1990s.
+    </div>
+
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname">Username</label>
+            <input type="text" name="uname" class="form-control" [(ngModel)]="username" />
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control" [(ngModel)]="password"/>
+        </div>
+
+        <div class="btn-container">
+            <div class="error">{{error}}</div>
+            <button class="btn btn-dark" (click)="login()">Login</button>
+        </div>
+    </div>
+</div>
